@@ -159,7 +159,7 @@
   // DEFAULTS
   $.fn[pluginName].defaults = {
   	speed: 		400,	// slide down speed
-  	height: 	500,	// expandable content height
+  	height: 	940,	// expandable content height
   	offsetTop: 	0,		// scroll top extra offset
   	children: 	'li'	// grid childrens selector
   }
