@@ -1,0 +1,76 @@
+
+
+/* set relative to positionante content correctly */
+.extended {
+
+width: 100%;
+}
+
+.gridex {
+	position: relative;
+	margin : auto 0;
+	padding-left: 0px;
+	padding-top: 0px;
+	background-color: #000;
+}
+
+.gridex-new {
+	position: relative;
+	margin : auto 0;
+	padding-left: 0px;
+	padding-top: 0px;
+	background-color: #eeeeee;
+}
+/* animatable grid container */
+.gd-expander {
+	position: absolute;
+	overflow: hidden;
+	height: 500px;
+	width: 100%;
+	margin-top: 0px;
+	left: 0px; /* standar row margin is 30px */
+}
+
+.gd-expander-right {
+	position: absolute;
+	overflow: hidden;
+	height: 500px;
+	width: 100%;
+	margin-top: 0px;
+	left: 0px; /* standar row margin is 30px */
+}
+
+/* inner content container */
+.gd-inner {
+	padding: 0px;
+	background: #ccc;
+}
+
+/* top arrow when expanded */
+.gridex > li > a {
+	position: relative;
+}
+.gridex > .gd-expanded > a::after {
+	
+}
+
+br {
+   display: block;
+   margin: 2px 0;
+}
+
+
+@media (max-width: 1200px) {
+	.gd-expander {
+		left: 0px; /* decrement left as bootstrap does */
+	}
+}
+
+@media (max-width: 767px) {
+	.gd-inner img {
+		display: none; /* hide to not overflow */
+	}
+	.gd-expander {
+		left: 0; /* remove left as bootstrap does */
+	}
+}
